@@ -15,7 +15,7 @@ btn_toggle.onclick = () => {
   if(btn_toggle.innerHTML === 'Show Calculation'){
     let name = author.innerHTML
     let number = /\d+/
-    calculation.innerHTML = name.match(number)+length.value
+    calculation.innerHTML = Number(name.match(number))+Number(length.value)
     btn_toggle.innerHTML = "Show author"
     author.style.display = "none"
     calculation.style.display = "block"
